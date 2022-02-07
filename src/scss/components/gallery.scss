@@ -1,0 +1,14 @@
+.gallery {
+    padding: 50px;
+    display: flex;
+    &__item {
+      flex: 1;
+      padding: 50px;
+      &__img {
+        width: 100%;
+      }
+    }
+    
+
+  }
+  

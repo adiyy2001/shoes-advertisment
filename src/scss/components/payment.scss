@@ -1,0 +1,77 @@
+.payment {
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    label {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    
+    &__title {
+      font-size: 20px;
+      color: lightgray;
+    }
+  
+    &__button {
+      position: absolute;
+      height: 40px;
+      bottom: -40;
+      width: 100%;
+      left: 0;
+      -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+      background-color: #369e62;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    &__card__icons {
+      display: flex;
+      
+      &__icon {
+        margin-right: 10px;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__close {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-color: gray;
+      color: white;
+      top: 19px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 2px;
+    }
+  }
+  
+
+  .payment__input {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  
+    &::placeholder {
+      color: rgb(163, 163, 163);
+    }
+  }

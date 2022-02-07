@@ -1,0 +1,61 @@
+footer {
+  display: flex;
+
+  .footer-left {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    .wrapper {
+      .title {
+        font-size: 16px;
+      }
+      .list {
+        padding: 0;
+        list-style: none;
+        &__tem {
+          margin-bottom: 10px;
+          color: gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .wrapper {
+      .mail {
+        &__input {
+          padding: 5px;
+        }
+        &__button {
+          padding: 5px;
+          background-color: black;
+          color: white;
+        }
+      }
+      .title {
+        font-size: 16px;
+      }
+
+      .icons {
+        display: flex;
+        &__icon {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+      }
+
+      .copyright {
+        font-weight: 300;
+        font-size: 14px;
+      }
+    }
+  }
+}

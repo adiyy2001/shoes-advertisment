@@ -1,0 +1,81 @@
+@import "../variables.scss";
+
+.slider {
+    background: url($bricks-wall);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+    &__wrapper {
+      display: flex;
+      width: 500vw;
+      transition: all 1.5s ease-in-out;
+      &__item {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+  
+          @each $item, $index in $backgroundColors {
+            $i: index($backgroundColors, $item);
+            &:nth-child(#{$i}) .background{
+              background-color: $item
+            }
+          }
+          @each $item, $index in $priceColors {
+            $i: index($priceColors, $item);
+            &:nth-child(#{$i}) .price{
+              color: $item
+            }
+          }
+        
+        
+        .background {
+          width: 750px;
+          height: 750px;
+          border-radius: 50%;
+          position: absolute;
+        }
+        &__img {
+          z-index: 1;
+        }
+        &__title {
+          position: absolute;
+          top: 10%;
+          right: 10%;
+          font-size: 60px;
+          font-weight: 900;
+          text-align: center;
+          color: $cl-white;
+          z-index: 1;
+        }
+        &__price {
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          font-size: 60px;
+          font-weight: 300;
+          text-align: center;
+          color: $cl-white;
+          border: 1px solid gray;
+          z-index: 1;
+        }
+        &__buy-button {
+          position: absolute;
+          top: 50%;
+          right: 10%;
+          font-size: 30px;
+          font-weight: 900;
+          color: $cl-white;
+          border: 1px solid gray;
+          background-color: black;
+          z-index: 1;
+          cursor: pointer;
+        
+          &:hover {
+            background-color: $cl-white;
+            color: black;
+          }
+        }
+      }
+    }
+  }

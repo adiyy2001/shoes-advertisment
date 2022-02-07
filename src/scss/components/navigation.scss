@@ -1,0 +1,44 @@
+.nav {
+    background-color: $cl-black;
+    color: $cl-white;
+    padding: 20px 50px;
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__item {
+        .search {
+          display: flex;
+          align-items: center;
+          background-color: gray;
+          padding: 10px 20px;
+          border-radius: 10px;
+          &__input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+  
+            &::placeholder {
+              color: lightgray;
+            }
+          }
+        }
+        .limited__offer {
+          font-size: 20px;
+          border-bottom: 2px solid green;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .nav__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      margin-right: 50px;
+      cursor: pointer;
+      color: lightgray;
+      font-weight: 400;
+    }
+  }

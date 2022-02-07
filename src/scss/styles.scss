@@ -1,0 +1,26 @@
+@import "./components/slider.scss";
+@import "./components/navigation.scss";
+@import "./components/features.scss";
+@import "./components/product.scss";
+@import "./components/payment";
+@import "./components/gallery.scss";
+@import "./components/newSeason.scss";
+@import "./components/footer.scss";
+
+@import "./variables.scss";
+@import "./media.scss";
+@import "./resuable.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
